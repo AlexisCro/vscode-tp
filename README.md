@@ -40,3 +40,15 @@ Pour réaliser cette étape j'ai créé une nouvelle branche via `git checkout -
 Je vais ensuite fusionner la branche avec la branche de base qui est `tp/new-branch-1`
 
 Pour cela je me suis mis sur la branche de base via la commande `git checkout` puis j'ai lancé la commande `git merge feature/branch-feature-1`.
+
+### Tâche 2 :
+Pour la réalisation de conflict je suis allé modifier sur la branche main le readme également en mettant autre chose que ce qui est actuellement présent.
+
+Puis je suis retourné sur ma branche enfant `tp/new-branch-1` et réalisé un `git rebase main` de ce fait les mêmes lignes modifiées différememnt sont entrées en conflits.
+![conflits](image-2.png)
+
+J'ai donc résolu les conflits de la façon suivante :
+- Sélectionné et gardé la partie entre `===== ... >>>>>` puis fait un `git add` du fichier pour le marquer résolu.
+Ensuite j'ai lancé la commande `git rebase --continue`.
+
+
