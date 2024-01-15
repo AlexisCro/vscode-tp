@@ -38,3 +38,5 @@ La présence d'un ReadMe détaillé est également à noter.
 ### Tâche 1 :
 Pour réaliser cette étape j'ai créé une nouvelle branche via `git checkout -b feature/branch-feature-1`
 Je vais ensuite fusionner la branche avec la branche de base qui est `tp/new-branch-1`
+
+Pour cela je me suis mis sur la branche de base via la commande `git checkout` puis j'ai lancé la commande `git merge feature/branch-feature-1`.
